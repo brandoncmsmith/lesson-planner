@@ -1,0 +1,47 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  margin-top: 50px;
+}
+
+form {
+  display: inline-block;
+  margin-top: 50px;
+  text-align: left;
+}
+
+label {
+  display: inline-block;
+  width: 120px;
+  text-align: right;
+  margin-right: 10px;
+}
+
+select,
+input[type="text"] {
+  width: 200px;
+  height: 30px;
+  font-size: 16px;
+  padding: 5px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: lightblue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#lessonPlan {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: lightgray;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}

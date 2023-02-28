@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Lesson Plan Generator</title>
+    <link rel="stylesheet" href="App.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Lesson Plan Generator</h1>
+      <form onSubmit={handleSubmit}>
+        <div class="form-group">
+          <label for="gradeLevel">Grade Level:</label>
+          <select id="gradeLevel" name="gradeLevel" value={gradeLevel} onChange={handleChange}>
+            <option value="">--Please select--</option>
+            <option value="K-2">K-2</option>
+            <option value="3-5">3-5</option>
+            <option value="6-8">6-8</option>
+            <option value="9-12">9-12</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="topic">Topic:</label>
+          <input type="text" id="topic" name="topic" value={topic} onChange={handleChange} />
+        </div>
+        <button type="submit">Generate Lesson Plan</button>
+      </form>
+      {lessonPlan && (
+        <div class="lesson-plan">
+          <h2>Lesson Plan:</h2>
+          <p>{lessonPlan}</p>
+          <button onClick={handleSave}>Save</button>
+          <button onClick={handlePrint}>Print</button>
+        </div>
+      )}
+    </div>
+    <script src="App.js"></script>
+  </body>
+</html>
